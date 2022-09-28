@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     public Button btn_login;
     public String correo = "correo@correo.cl";
     public String contrasena = "contra";
+    public String ejemplo = "ejemplo";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,5 +42,4 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
 }
