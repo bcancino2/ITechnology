@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/technology"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnEnviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enviar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtContrasena"
+        app:layout_constraintVertical_bias="0.297" />
+
+    <EditText
+        android:id="@+id/txtContrasena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="400dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/txtCorreo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/txtContrasena"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.706"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Correo"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/txtCorreo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.282"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.877" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="129dp"
+        android:layout_height="29dp"
+        android:text="@string/Contraseña"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtContrasena"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.354"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCorreo"
+        app:layout_constraintVertical_bias="0.575" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
