@@ -33,7 +33,7 @@ public class MainActivity3 extends AppCompatActivity {
         correo = b.getString("correo");
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         View headerView = navigationView.getHeaderView(0);
-        //HOLA1
+        //HOLA12
         TextView textcorreo = (TextView) headerView.findViewById(R.id.txtCorreoUser);
         textcorreo.setText(correo);
 
