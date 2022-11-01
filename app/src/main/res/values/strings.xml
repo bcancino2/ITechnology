@@ -13,4 +13,10 @@
     <string name="menu_slideshow">Slideshow</string>
     <string name="Correo">Correo</string>
     <string name="Contraseña">Contraseña</string>
+    <string name="textview">TextView</string>
+    <string name="descr">TextView</string>
+    <string name="nombre">TextView</string>
+    <string name="nom">TextView</string>
+    <string name="nombreItem">TextView</string>
+    <string name="descItem">TextView</string>
 </resources>

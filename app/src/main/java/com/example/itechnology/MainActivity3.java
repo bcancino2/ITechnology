@@ -33,7 +33,7 @@ public class MainActivity3 extends AppCompatActivity {
         correo = b.getString("correo");
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         View headerView = navigationView.getHeaderView(0);
-        //HOLA12
+
         TextView textcorreo = (TextView) headerView.findViewById(R.id.txtCorreoUser);
         textcorreo.setText(correo);
 
@@ -45,11 +45,12 @@ public class MainActivity3 extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+
         DrawerLayout drawer = binding.drawerLayout;
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow)
+                R.id.nav_home)
                 .setOpenableLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
@@ -60,6 +61,7 @@ public class MainActivity3 extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
+
         getMenuInflater().inflate(R.menu.main_activity3, menu);
         return true;
     }
